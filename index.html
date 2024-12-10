@@ -6,13 +6,12 @@
     <title>About Kenzie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Raleway', sans-serif;
-            background-color: #F8EEE7;
-            color: #49274A;
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #2C2C2C;
+            color: #f8eee7;
             margin: 0;
             padding: 0;
         }
@@ -21,28 +20,41 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        header {
-            background-color: #94618E;
+        header { background-color: #1F1F1F;
             padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .nav-bar {
             list-style: none;
             display: flex;
-            justify-content: center;
+            align-items: center;
             margin: 0;
             padding: 0;
         }
         .nav-bar li {
             margin: 0 15px;
         }
+        .nav-bar .home-link {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2rem;
+            color: #F8eee7;
+        }
         .nav-bar a {
             text-decoration: none;
-            color: #F4DECB;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            color: #F8eee7;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1rem;
         }
         .nav-bar a:hover {
             text-decoration: underline;
+        }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: #EE2A7B;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
         .intro {
             display: flex;
@@ -56,38 +68,30 @@
         }
         .intro img {
             flex: 1;
-            max-width: 100%;
+            max-width: 350px;
             height: auto;
-        }
-        .profile-image {
-            width: auto;
-            height: auto;
-        }
-        h1 {
-            font-family: 'Playfair Display', serif;
-            color: #94618E;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
         }
         p {
             font-size: 1.2rem;
             line-height: 1.6;
-            color: #49274A;
+            color: #f8eee7;
         }
         .btn {
             display: inline-block;
             margin-top: 1rem;
+            margin-right: 10px;
             padding: 0.8rem 1.5rem;
             font-size: 1rem;
-            color: #F4DECB;
-            background-color: #94618E;
+            color: #2C2C2C;
+            background-color: #EE2A7B;
             border: none;
             border-radius: 50px;
             text-decoration: none;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Noto Sans', sans-serif;
         }
         .btn:hover {
-            background-color: #49274A;
+            background-color: #f8eee7;
+            color: #2C2C2C;
         }
         .tools {
             text-align: center;
@@ -104,26 +108,34 @@
             text-align: center;
         }
         footer {
-            background-color: #49274A;
-            color: #F4DECB;
+            background-color: #1F1F1F;
+            color: #f8eee7;
             text-align: center;
             padding: 2rem 0;
             margin-top: 4rem;
         }
+        footer a {
+            color: #EE2A7B;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="home-link"><a href="#">M</a></li>
+                <li><a href="#wloowvb">wloowvb</a></li>
+                <li><a href="#wloorec">wloorec</a></li>
+                <li><a href="#more-about-me">more about me!</a></li>
+                <li><a href="#contact-info">contact info</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="#wloowvb">wloowvb</a></li>
-                    <li><a href="#wloorec">wloorec</a></li>
-                    <li><a href="#more-about-me">more about me!</a></li>
-                    <li><a href="#contact-info">contact info</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
             <section class="intro">
                 <div class="intro-text">
@@ -131,7 +143,7 @@
                     <p>
                         I am a Global Business and Digital Arts student at the University of Waterloo, which is really just a fancy way of saying I like making things that are cool and aesthetic while also caring about the success of it. I play for the varsity volleyball team here, which has been a super cool opportunity, especially as someone who started the sport later in life. I love to travel, take photos on my digital camera, listen to music, and hang out with my dog.
                     </p>
-                    <a href="#more-about-me" class="btn">Click here to read more about me!</a>
+                    <a href="#more-about-me" class="btn">Click to Learn More About Me</a>
                 </div>
                 <img src="Untitled design (7).png" alt="Kenzie" class="profile-image">
             </section>
@@ -148,12 +160,18 @@
                 <p>
                     As an aspiring designer, I have been working on many side projects including working with my volleyball team to create unique graphics for our Instagram account, and the University of Waterloo's recreation Instagram account where I create video and still content to promote our facilities and programs.
                 </p>
+                <a href="#wloowvb" class="btn">View wloowvb</a>
+                <a href="#wloorec" class="btn">View wloorec</a>
             </section>
         </main>
     </div>
     <footer>
         <p>Feel free to reach out and work with me!</p>
+        <p>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="#wloowvb">wloowvb</a> |
+            <a href="#wloorec">wloorec</a>
+        </p>
     </footer>
 </body>
 </html>
-
