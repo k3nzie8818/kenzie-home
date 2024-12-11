@@ -20,8 +20,10 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        header { background-color: #1F1F1F;
+        header {
+            background-color: #1F1F1F;
             padding: 1rem 0;
+            margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -29,21 +31,29 @@
         .nav-bar {
             list-style: none;
             display: flex;
-            align-items: center;
             margin: 0;
             padding: 0;
+            width: 100%;
+        }
+        .nav-bar-left {
+            display: flex;
+            align-items: center;
+        }
+        .nav-bar-right {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
         }
         .nav-bar li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
-        .nav-bar .home-link {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 1.2rem;
-            color: #F8eee7;
+        .nav-bar .home-link img {
+            height: 40px;
+            width: auto;
         }
         .nav-bar a {
             text-decoration: none;
-            color: #F8eee7;
+            color: #f8eee7;
             font-family: 'Noto Sans', sans-serif;
             font-size: 1rem;
         }
@@ -55,7 +65,7 @@
             color: #EE2A7B;
             font-size: 2.5rem;
             margin-bottom: 1rem;
-          margin-top: 70px;
+            margin-top: 70px;
         }
         .intro {
             display: flex;
@@ -88,7 +98,7 @@
             border: none;
             text-decoration: none;
             font-family: 'Noto Sans', sans-serif;
-          border-radius: 20px;
+            border-radius: 20px;
         }
         .btn:hover {
             background-color: #f8eee7;
@@ -129,14 +139,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class="home-link"><a href="https://k3nzie8818.github.io/kenzie-home/"><img src="mlogoclr.png" alt="Home Logo" style="height: 40px; width: auto;"></a></li>
+        <nav class="nav-bar">
+            <div class="nav-bar-left">
+                <li class="home-link"><a href="https://k3nzie8818.github.io/kenzie-home/"><img src="mlogoclr.png" alt="Home Logo"></a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-wloowvb/">wloowvb</a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-wloorec/">wloorec</a></li>
                 <li><a href="https://k3nzie8818.github.io/kenzie-more-about-me/">more about me!</a></li>
-                <li><a href="#contact-info">contact info</a></li>
-            </ul>
+            </div>
+            <div class="nav-bar-right">
+                <li><a href="mailto:mackenzieleu@gmail.com">email</a></li>
+                <li><a href="https://www.linkedin.com/in/mackenzie-leu">LinkedIn</a></li>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -165,16 +178,16 @@
                     As an aspiring designer, I have been working on many projects including working with my volleyball team to create unique graphics for our Instagram account, and the University of Waterloo's recreation Instagram account where I create video and still content to promote our facilities and programs.
                 </p>
                 <a href="https://k3nzie8818.github.io/kenzie-wloowvb/" class="btn">See some of my wloowvb work</a>
-                <a href="#wloorec" class="btn">See some of my wloorec work</a>
+                <a href="https://k3nzie8818.github.io/kenzie-wloorec/" class="btn">See some of my wloorec work</a>
             </section>
         </main>
     </div>
     <footer>
         <p>Feel free to reach out and work with me!</p>
         <p>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-            <a href="#wloowvb">wloowvb</a> |
-            <a href="#wloorec">wloorec</a>
+            <a href="https://www.linkedin.com/in/mackenzie-leu" target="_blank">LinkedIn</a> |
+            <a href="https://k3nzie8818.github.io/kenzie-wloowvb/">wloowvb</a> |
+            <a href="https://k3nzie8818.github.io/kenzie-wloorec/">wloorec</a>
         </p>
     </footer>
 </body>
